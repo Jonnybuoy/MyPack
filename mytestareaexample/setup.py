@@ -34,7 +34,7 @@ setup(
     long_description_content_type='text/markdown',  # Optional
 
     # This should be a valid link to your project's main homepage.
-    url='https://gitlab.slade360emr.com/training/johnproject/tree/learningbranch/mytestareaexample',  # Optional
+    url='https://github.com/Jonnybuoy/MyPack.git',  # Optional
 
     # This should be your name or the name of the organization which owns the
     # project.
