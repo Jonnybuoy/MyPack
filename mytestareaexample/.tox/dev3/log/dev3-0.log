@@ -1,0 +1,9 @@
+action: dev3, msg: getenv
+cwd: /home/johnson/Desktop/MyTestExample/.tox
+cmd: /usr/bin/python3 -m virtualenv --no-download --python /usr/bin/python3 dev3
+Already using interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /home/johnson/Desktop/MyTestExample/.tox/dev3/bin/python3
+Also creating executable in /home/johnson/Desktop/MyTestExample/.tox/dev3/bin/python
+Installing setuptools, pip, wheel...
+done.

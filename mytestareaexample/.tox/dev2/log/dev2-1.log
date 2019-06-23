@@ -1,0 +1,7 @@
+action: dev2, msg: getenv
+cwd: /home/johnson/Desktop/MyTestExample
+cmd: /home/johnson/Desktop/MyTestExample/.tox/dev2/bin/python -m pip install discover
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Collecting discover
+Installing collected packages: discover
+Successfully installed discover-0.4.0

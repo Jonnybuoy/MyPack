@@ -1,0 +1,4 @@
+action: dev3, msg: envreport
+cwd: /home/johnson/Desktop/MyTestExample
+cmd: /home/johnson/Desktop/MyTestExample/.tox/dev3/bin/python -m pip freeze
+discover==0.4.0
