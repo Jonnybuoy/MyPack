@@ -1,0 +1,8 @@
+action: dev2, msg: getenv
+cwd: /home/johnson/Desktop/django-practice/app_portfolio/shoppinglist/.tox
+cmd: /usr/bin/python3 -m virtualenv --no-download --python /usr/bin/python2.7 dev2
+New python executable in /home/johnson/Desktop/django-practice/app_portfolio/shoppinglist/.tox/dev2/bin/python2.7
+Also creating executable in /home/johnson/Desktop/django-practice/app_portfolio/shoppinglist/.tox/dev2/bin/python
+Installing setuptools, pip, wheel...
+done.
+Running virtualenv with interpreter /usr/bin/python2.7
