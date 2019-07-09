@@ -71,6 +71,8 @@ class AppTests(TestCase):
 
 
 
+
+
 """    def test_text_content(self):
         shoplist = Shoppinglist.objects.get(pk=1)
         expected_object_name = f'{shoplist.title}'

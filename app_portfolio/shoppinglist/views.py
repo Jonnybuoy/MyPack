@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from shoppinglist.models import Shoppinglist
 from django.utils import timezone
-from .forms import NameForm
+from .forms import NameForm, DeleteForm
+from django.contrib import messages
 
 
 def list_index(request):
@@ -39,6 +40,27 @@ def list_add(request):
 
 
 def list_delete(request, pk):
-    shoplists = Shoppinglist.objects.get(pk=pk)
-    shoplists.delete()
-    return redirect('list_index')
+    shoplist = Shoppinglist.objects.get(pk=pk)
+    form = DeleteForm(request.POST)
+    try:
+        if request.method == "POST":
+            shoplist.delete()
+            messages.success(request, 'Item successfully deleted!')
+        else:
+            form = DeleteForm(instance=shoplist)
+    except Exception as e:
+        messages.warning(request, "Could not delete item: Error {}".format(e))
+    context = {
+        'form': form,
+        'shoplist': shoplist
+    }
+    return render(request, 'list_delete.html', context)
+
+
+"""def delete(request, pk):
+    if request.method == "POST":
+        form = DeleteForm(request.POST)
+        if form.is_valid():
+            shoplist = Shoppinglist.objects.get(pk=pk)
+            shoplist.delete()
+            return redirect('list_index')"""
