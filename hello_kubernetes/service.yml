@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: johnhello
+  labels:
+    name: johnhello
+spec:
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8000
+  selector:
+    name: johnhello
+  type: LoadBalancer

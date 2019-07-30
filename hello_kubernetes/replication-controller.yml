@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: johnhello
+  labels:
+    name: johnhello
+spec:
+  replicas: 1
+  selector:
+    name: johnhello
+  template:
+    metadata:
+      labels:
+        name: johnhello
+    spec:
+      containers:
+        - name: johnhello
+          image: 12905/johnsonhelloworld:1.0
+          ports:
+            - containerPort: 8000
